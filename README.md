@@ -23,7 +23,8 @@ A bank loan officer enters applicant details (income, credit score, loan amount,
 
 ## 📸 Demo
 
-> *(Add your Streamlit screenshot here)*
+> *https://github.com/niranjanniru-max/Credit-Risk-Intelligence-System/blob/48b03a7b9e95ddecc46beb32eac1324ed4e4d339/Screenshot%202026-05-31%20134508.png
+> https://github.com/niranjanniru-max/Credit-Risk-Intelligence-System/blob/48b03a7b9e95ddecc46beb32eac1324ed4e4d339/Screenshot%202026-05-31%20134552.png*
 
 **High Risk applicant → 90.9% default probability 🔴**
 **Low Risk applicant → 38.0% default probability 🟢**
