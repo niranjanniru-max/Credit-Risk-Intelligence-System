@@ -264,7 +264,7 @@ Credit-Risk-Intelligence-System/
 
 ## 🧠 What I Learned
 
-This was my **first real ML project** built from scratch as a 2nd year B.Tech student with 2 months of ML knowledge. Here's what actually stuck:
+This was my **first real ML project** built from scratch as a 4nd year B.Tech student with 2 months of ML knowledge. Here's what actually stuck:
 
 **Technical:**
 - Data leakage can be subtle — null patterns, not just wrong columns
