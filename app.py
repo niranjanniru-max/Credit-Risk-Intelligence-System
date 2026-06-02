@@ -11,13 +11,25 @@ st.set_page_config(
 
 import zipfile
 import os
+import sys
+
+print(f"DEBUG: Python version: {sys.version}")
+print(f"DEBUG: Current directory: {os.getcwd()}")
+print(f"DEBUG: Files in directory: {os.listdir('.')}")
 
 @st.cache_resource
 def load_model():
+    print("DEBUG: entering load_model()")
     # Unzip model if not present (Streamlit Cloud handles zipped files better for size limits)
-    if not os.path.exists('credit_risk_model.pkl') and os.path.exists('credit_risk_model.zip'):
-        with zipfile.ZipFile('credit_risk_model.zip', 'r') as zip_ref:
-            zip_ref.extractall('.')
+    if not os.path.exists('credit_risk_model.pkl'):
+        print("DEBUG: credit_risk_model.pkl not found")
+        if os.path.exists('credit_risk_model.zip'):
+            print("DEBUG: credit_risk_model.zip found, unzipping...")
+            with zipfile.ZipFile('credit_risk_model.zip', 'r') as zip_ref:
+                zip_ref.extractall('.')
+            print("DEBUG: Unzip complete")
+        else:
+            print("DEBUG: credit_risk_model.zip NOT FOUND")
             
     model   = joblib.load('credit_risk_model.pkl')
     columns = joblib.load('model_columns.pkl')
