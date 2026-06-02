@@ -1,5 +1,11 @@
 # 🏦 Credit Risk Intelligence System
 
+# Credit Risk Intelligence System
+
+A machine learning app for credit risk prediction.
+
+🚀 **Live Demo:** [Click here to view](https://credit-risk-intelligence-system-niranjanniru-max2jkwbf46jutu7y.streamlit.app/)
+
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Accuracy](https://img.shields.io/badge/Accuracy-86%25-brightgreen)
 ![ROC--AUC](https://img.shields.io/badge/ROC--AUC-0.84-green)
