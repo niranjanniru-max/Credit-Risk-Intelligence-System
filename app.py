@@ -9,8 +9,16 @@ st.set_page_config(
     layout="wide"
 )
 
+import zipfile
+import os
+
 @st.cache_resource
 def load_model():
+    # Unzip model if not present (Streamlit Cloud handles zipped files better for size limits)
+    if not os.path.exists('credit_risk_model.pkl') and os.path.exists('credit_risk_model.zip'):
+        with zipfile.ZipFile('credit_risk_model.zip', 'r') as zip_ref:
+            zip_ref.extractall('.')
+            
     model   = joblib.load('credit_risk_model.pkl')
     columns = joblib.load('model_columns.pkl')
     return model, columns
