@@ -11,8 +11,8 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    model   = joblib.load(r'D:\ML PROJECTS\credit_risk_model.pkl')
-    columns = joblib.load(r'D:\ML PROJECTS\model_columns.pkl')
+    model   = joblib.load('credit_risk_model.pkl')
+    columns = joblib.load('model_columns.pkl')
     return model, columns
 
 model, model_columns = load_model()
