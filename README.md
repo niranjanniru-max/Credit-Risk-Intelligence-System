@@ -4,7 +4,7 @@
 
 A machine learning app for credit risk prediction.
 
-🚀 **Live Demo:** [Click here to view](https://credit-risk-intelligence-system-niranjanniru-max2jkwbf46jutu7y.streamlit.app/)
+🚀 **Live Demo:** [Click here to view](https://loan-default-credit-risk-niranjanniru-max-vd7gnbh9vbjq.streamlit.app/)
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Accuracy](https://img.shields.io/badge/Accuracy-86%25-brightgreen)
